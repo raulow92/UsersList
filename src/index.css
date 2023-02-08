@@ -1,13 +1,136 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    *border: solid 0.2px black;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#root {
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    justify-content: center;
+    background-color: #ecf6ff;
+}
+
+.content {
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+aside {
+    width: 300px;
+    margin-right: 20px;
+}
+
+main {
+    width: 800px;
+}
+
+.title {
+    height: 140px;
+    padding-left: 25px;
+    padding-top: 65px;
+    opacity: 0.85;
+    background-image: radial-gradient(circle at 7.46% 14.3%, #00abff 0, #00a7ff 5%, #00a1ff 10%, #009aff 15%, #0092ff 20%, #0088ff 25%, #667dff 30%, #9a70ff 35%, #bf62ff 40%, #db50ff 45%, #f23cf2 50%, #ff20dd 55%, #ff00c8 60%, #ff00b1 65%, #ff009b 70%, #ff0084 75%, #ff006e 80%, #ff0058 85%, #ff0442 90%, #ff2e2b 95%, #ff4409 100%);
+    border-radius: 10px;
+    color: whitesmoke;
+    margin-bottom: 20px;
+}
+
+.title > h1 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.title > h2 {
+    font-size: 16px;
+    font-weight: light;
+}
+
+.newUser {
+    width: 100%;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    color: rgb(36, 42, 66);    
+}
+
+.newUser > h3 {
+    padding-bottom: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.newUser > input {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(36, 42, 66, 0.159);
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+.newUser > button {
+    height: 35px;
+    width: 100%;
+    margin-top: 2px;
+    border-radius: 5px;
+    background-color: rgb(30, 116, 221);
+    border: none;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.containerInput {
+    width: 100%;
+    height: 60px;
+    border-radius: 10px;
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    color: whitesmoke;
+    background-color: rgb(38, 65, 99) ;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.containerInput > h2 {
+    font-size: 15px;
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+
+.containerInput > input {
+    height: 30px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+table {
+    border-spacing: 0;
+    text-align: center;
+    margin-bottom: 2px !important;
+}
+
+thead {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.containerTable {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+    margin-bottom: 30px;
 }
